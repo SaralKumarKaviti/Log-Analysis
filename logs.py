@@ -3,26 +3,26 @@ from datetime import datetime
 
 database="news"
 
-query_1=("SELECT a.title, count(*) AS views"
-         "FROM articles a INNER JOIN log b"
+query_1=("SELECT a.title, count(*) AS views "
+         "FROM articles a INNER JOIN log b "
          "on a.slug=replace(path,'/article/','')"
          "WHERE status='200 OK' AND length(path)>1 GROUP by"
          "a.title ORDER by views DESC limit 3")
 
 query_2=("SELECT c.name, count(*) AS views"
-         "FROM articles a INNER JOIN log b
+         "FROM articles a INNER JOIN log b"
          "on a.slug=replace(path,'/article/','') INNER JOIN"
          "authors c on (c.id=a.author)"
          "WHERE status='200 OK' AND length(path)>1 GROUP by"
          "c.name ORDER by views DESC")
 
-query_3=("SELECT day, perc FROM(
-         "SELECT day, round(
-         "sum(requests)/(SELECT count(*)FROM log
-         "WHERE substring(
-         "cast(log.time AS text),0,11)=day)*100),2)
+query_3=("SELECT day, perc FROM("
+         "SELECT day, round("
+         "sum(requests)/(SELECT count(*)FROM log"
+         "WHERE substring("
+         "cast(log.time AS text),0,11)=day)*100),2)"
          "AS perc from (SELECT substring(cast(log.time AS text),0,11) AS day,"
-         "count(*) AS requests FROM log WHERE status like '%404%' GROUP by day)
+         "count(*) AS requests FROM log WHERE status like '%404%' GROUP by day)"
          "AS log_percentage GROUP by day ORDER by perc DESC)"
          "AS final_query WHERE perc >=1")
 
