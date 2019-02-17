@@ -48,8 +48,8 @@ def print_results(query_results):
 def print_errors(query_results):
     for result in query_results:
         date=result[0]
-        date_obj=datetime.strptime(date,"%Y-%M-%D")
-        formatted_date=datetime.strptime(date_obj,"%B %D,%Y")
+        date_obj=datetime.strptime(date,"%Y-%m-%d")
+        formatted_date=datetime.strptime(date_obj,"%B %d,%Y")
         print("\t"+str(formatted_date)+" - "+str(result[1])+"% errors")
 
 
