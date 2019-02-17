@@ -50,24 +50,24 @@ def print_error_results(qresults):
         formatted_date=datetime.strftime(date_obj,"%B %d, %Y")
         print("\t"+str(formatted_date)+"-"+str(result[1])+"% errors")
 
-if __name__=='__main__':
-    print("What are the most popular three articles of all time?")
+#if __name__=='__main__':
+print("What are the most popular three articles of all time?")
     #get query1 results
-    popular_articles=get_results(query_1)
+popular_articles=get_results(query_1)
 
     #print query1 results
-    print_results(popular_articles)
-    print("Who are the most popular article authors of all time?")
+print_results(popular_articles)
+print("Who are the most popular article authors of all time?")
 
     #get query2 results
-    popular_authors=get_results(query_2)
+popular_authors=get_results(query_2)
     #print query2 results
-    print_results(popular_authors)
-    print("On which days did more than 1% of requests lead to errors?")
+print_results(popular_authors)
+print("On which days did more than 1% of requests lead to errors?")
     #get query3 results
 
-    error_days=get_results(query_3)
-    print_error_results(error_days)
+error_days=get_results(query_3)
+print_error_results(error_days)
 
 
     
