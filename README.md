@@ -3,13 +3,18 @@
 
 Logs Analysis Project, Part of the Udacity [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
-## What it is
+## What it is and does:
 
-A Reporting page that prints out reports in a plain text format based on the data in the database
+A Reporting page that prints out reports in a plain text format based on the data in the database. This reporting tool is a python program using the `psycopg2` module to connect to the database.
 
-## What it does
+## Questions:
 
-This reporting tool is python program using the `psycopg2` moudle to connect to the database.
+1. What are the most popular three aricles of all time?
+   
+2. Who are the most popular article authors of all time?
+
+3. On which days did more than 1% of requests lead to errors?
+   
 
 ## Software Requirements
 
@@ -70,9 +75,9 @@ $ vagrant ssh
 
 4. Unzip downloaded file. The file inside is called newsdata.sql
 
-5. Copy the newsdata.sql file and place inside `vagrant/logs-analysis` 
+5. Copy the newsdata.sql file and place inside `vagrant/Logs-Analysis` 
 
-6. In terminal or git change directory to `vagrant/logs-analysis` and look around with ll.
+6. cd into the correct project directory `cd/vagrant/Logs-Analysis`
 
 7. Load the data in local database using the command:
 
