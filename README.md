@@ -66,5 +66,29 @@ $ vagrant up
 ```
 $ vagrant ssh
 ```
+3. Download database from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+
+4. Unzip downloaded file. The file inside is called newsdata.sql
+
+5. Copy the newsdata.sql file and place inside `vagrant/logs-analysis` 
+
+6. In terminal or git change directory to `vagrant/logs-analysis` and look around with ll.
+
+7. Load the data in local database using the command:
+
+```
+$ psql -d news -f newsdata.sql
+```
+8. Run newsdata.py using:
+
+```
+$ python newsdata.py
+```
+Note: queries will take sometime to execute
+
+## Miscellaneous
+
+This README document is based on a template suggested by PhilipCoach in this Udacity from [post](https://discussions.udacity.com/t/readme-files-in-project-1/23524).
+
 
 
