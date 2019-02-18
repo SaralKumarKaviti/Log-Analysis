@@ -37,7 +37,7 @@ There are some urls and a few instructions on how to run the project
 ## URL's
 
 - [Git](https://git-scm.com/downloads)
-- [VirtualBox](https://www.vitrualbox.org/wiki/Downloads)
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - [Vagrant](https://www.vagrantup.com/)
 - [Vagrantfile](https://https://github.com/udacity/fullstack-nanodegree-vm)
 - [Sublime Text](https://www.sublimetext.com/3)
@@ -51,4 +51,20 @@ There are some urls and a few instructions on how to run the project
 * Launch the Vagrant VM(`vagrant up`)
 * Run Vagrant VM(`vagrant ssh`)
 * Now change the directory into vagrant folder i.e., `cd /vagrant`
+
+## How to Run Project
+
+Download the project zip file and unzip the file now copy unzip file inside `vagrant/log-analysis`
+
+1. Launch the Vagrant VM inside Vagrant sub-directory in the downloaded fullstack-nanodegree-vm repository using command.
+
+```
+$ vagrant up
+```
+2. Now log into vagrant using below command
+
+```
+$ vagrant ssh
+```
+
 
