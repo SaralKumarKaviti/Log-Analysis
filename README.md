@@ -26,7 +26,7 @@ In this project consists for following files:
 
 * logs.py - It is a main file to run Logs Analysis Reporting Tool
 
-* log_output.txt - It is a output file that will shown on the git bash
+* logs_output.txt - It is a output file that will shown on the git bash
 
 * README.md - It is an Instructions to install this reporting tool
 
