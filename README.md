@@ -30,4 +30,25 @@ In this project consists for following files:
 
 * README.md - It is an Instructions to install this reporting tool
 
+## Installation
+
+There are some urls and a few instructions on how to run the project
+
+## URL's
+
+- [Git](https://git-scm.com/downloads)
+- [VirtualBox](https://www.vitrualbox.org/wiki/Downloads)
+- [Vagrant](https://www.vagrantup.com/)
+- [Vagrantfile](https://https://github.com/udacity/fullstack-nanodegree-vm)
+- [Sublime Text](https://www.sublimetext.com/3)
+
+## Installation Process
+
+* Install Git, Sublime text, VirtualBox and Vagrant
+* Clone the Udacity Vagrantfile
+* Goto Vagrant dictory and download the zip file and place here 
+* Open terminal or git
+* Launch the Vagrant VM(`vagrant up`)
+* Run Vagrant VM(`vagrant ssh`)
+* Now change the directory into vagrant folder i.e., `cd /vagrant`
 
