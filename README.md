@@ -59,7 +59,7 @@ There are some urls and a few instructions on how to run the project
 
 ## How to Run Project
 
-Download the project zip file and unzip the file now copy unzip file inside `vagrant/log-analysis`
+Download the project zip file and unzip the file now copy unzip file inside `vagrant/Log-Analysis`
 
 1. Launch the Vagrant VM inside Vagrant sub-directory in the downloaded fullstack-nanodegree-vm repository using command.
 
@@ -75,9 +75,9 @@ $ vagrant ssh
 
 4. Unzip downloaded file. The file inside is called newsdata.sql
 
-5. Copy the newsdata.sql file and place inside `vagrant/Logs-Analysis` 
+5. Copy the newsdata.sql file and place inside `vagrant/Log-Analysis` 
 
-6. cd into the correct project directory `cd/vagrant/Logs-Analysis`
+6. cd into the correct project directory `vagrant/Log-Analysis`
 
 7. Load the data in local database using the command:
 
