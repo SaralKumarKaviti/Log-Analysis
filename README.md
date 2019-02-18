@@ -82,7 +82,7 @@ $ psql -d news -f newsdata.sql
 8. Run newsdata.py using:
 
 ```
-$ python newsdata.py
+$ python logs.py
 ```
 Note: queries will take sometime to execute
 

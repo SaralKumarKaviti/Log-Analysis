@@ -39,7 +39,6 @@ def get_results(query):
 
 
 def print_results(query_results):
-    #for i,res in enumerate(query_results):
     for i,res in enumerate(query_results):
         print("\t"+str(i+1)+"."+str(res[0])+" - "+str(res[1])+" views")
 
